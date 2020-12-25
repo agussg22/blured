@@ -1,0 +1,188 @@
+* {font-family: 'Lato', sans-serif;
+    padding: 0; margin: 0; box-sizing: border-box;}
+
+  
+
+
+    
+    
+  
+
+
+        /*NAVEGADOR*/
+.nav h4 { font-size: 50px; 
+         position: absolute;
+         top: 0;  
+         left: 5%;
+         padding-left: 10px;
+         color:  #000000;
+         font-family: 'Great Vibes', cursive !important; 
+         user-select: none;}   
+
+             
+.nav {background: white; height: 60px;}
+.nav a { color:  #000000 ; 
+        font-size: 18px;
+        text-decoration: none;
+        margin: 8px;
+        user-select: none;}
+
+
+.nav li { display: inline-block; 
+    padding: 15px; user-select: none;}
+
+.nav ul {text-align: right;
+   user-select: none;}
+
+
+.nav a:hover {background: linear-gradient(to right, #8e9eab , #eef2f3);
+                border-radius: 5px; }
+
+/*NAV RESPONSIVEEEEEE*/
+
+
+.nav_responsive {display: none;}
+.label_responsive {display: none;}
+
+.nav_responsive_button {height: 40px; width: 40px; display: none;}
+
+
+
+@media only screen and (max-width: 700px) {
+  
+    .nav {display:none}
+  
+   .nav_responsive { display: block; }
+   .nav_responsive_ul { width: 100% ;
+                        height: 150px; 
+                        background:linear-gradient(to right,#8e9eab,#eef2f3) ; 
+                        position: relative; 
+                        z-index: 0;
+                        top: -1000px;
+                         
+                        
+                        
+                        }
+
+
+
+  .nav_responsive_button {display: inline-block; 
+                          position: absolute;
+                          z-index: 5;
+                          
+                           }
+
+  /*.nav_responsive_button_conteiner { width: 100%; position: absolute; height: 50px; }*/
+  
+  .label_responsive {display: inline-block; font-family: 'Great Vibes', cursive ; position: absolute; font-size: 40px; color: #000000;
+                     margin-left: 5px; }
+  
+  .li_responsive {  
+    font-size: 18px;
+    text-decoration: none;
+    user-select: none;
+    text-align: right;
+    }
+
+    .li_responsive a {color:  #000000; 
+                     margin: 10px;
+                     text-decoration: none;}
+    
+
+    .nav_responsive_button_conteiner:hover > .nav_responsive_ul{ transition: 0.2s; top: 0;
+    }
+
+
+  
+
+         
+}
+
+  
+       /*HEADER*/
+       
+.header { height: 600px;
+        background-image: url("imagenes/fondo.jpg");
+        background-size: cover;
+        color: white;}
+ 
+.header h1{  
+     color: #85968E;
+     position: absolute;
+     font-size: 80px;
+     top: 50%;
+     left: 30%;
+     user-select: none;
+  
+    }
+
+
+
+
+  
+
+       
+/*secciones margen*/
+section {margin: 20px;}
+
+    /*contenidos*/
+.contenido1 {  height: auto;
+    margin: auto;
+    padding: 90px ;
+    overflow: hidden;             /*caracteristicas generales contenedores, padding margin h*/
+    background: white;  }
+
+.contenido1 h3 { text-align: center ; font-size: 40px; margin-bottom: 50px;}    
+
+.contenido1_art p { font-size: 20px;  }
+
+
+/*GALERIA*/
+
+.gridcontainer { display: grid;
+          
+                grid-auto-rows: 200px;
+                grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+                grid-gap: 30px;
+                margin-left: 50px;
+                margin-right: 50px;
+                overflow: hidden;
+               
+            
+               }
+.conteiner2 {background: linear-gradient( #8e9eab , #eef2f3);}
+/*.griditem { border: 10px solid black;}*/
+
+.conteiner2 h4 {font-size: 50px; 
+                text-align: center;
+                padding: 40px;}
+                
+               
+.griditem { height: 100%;
+            width: 100%;
+            object-fit: cover;}
+.gridcontainer div {position: absolute;
+                    left: 22%;
+                    bottom: 30%;
+                   
+                  }
+
+
+.griditem:hover {background:  #000000;
+  cursor: pointer;}
+
+
+
+
+            
+        
+
+footer {height: 1fr; background:linear-gradient(to right,#757F9A,#D7DDE8); }
+
+.footer_links { display: flex; justify-content: center; }
+
+
+
+.footer_contacto { display: flex; justify-content: center; justify-content: space-between; flex-wrap: wrap; overflow: hidden;}
+footer p { color: #000000; display: inline-block; margin: 5px; padding:8px; }
+footer a { font-size: 20px; color:#000000; margin: 8px; }
